@@ -45,7 +45,7 @@ template node['apache']['windows']['conf'] do
 end
 
 node['apache']['windows']['extras'].each do |extra|
-  include_recipe "apache2_windows::_extra_#{extra}"
+  include_recipe "apache2-windows::_extra_#{extra}"
 end
 
 # Start apache service
